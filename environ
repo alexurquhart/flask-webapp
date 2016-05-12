@@ -1,0 +1,17 @@
+#!/bin/bash
+source env/bin/activate;
+
+DEV_SETTINGS="app.config.DevelopmentConfig"
+PROD_SETTINGS="app.config.ProductionConfig"
+TEST_SETTINGS="app.config.TestingConfig"
+
+if [ "$APP_ENV" = "prod" ]; then
+    export APP_SETTINGS=$PROD_SETTINGS;
+elif [ "$APP_ENV" = "test" ]; then
+    export APP_SETTINGS=$TEST_SETTINGS;
+else
+    export APP_SETTINGS=$DEV_SETTINGS;
+fi
+
+export SESSION_SECRET="bcNqzxcvJf81udVepd4YjSIveVn3hgQRqnRsZ21dmvzJWpjJ43CvIvnYa3NCYLeCheWa0A0rWtzwanzxWO3vSA==";
+export DATABASE_URI="postgresql://alexurquhart:password@localhost/app";
