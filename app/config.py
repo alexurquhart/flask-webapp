@@ -19,6 +19,10 @@ class Config(object):
     MAIL_SERVER = 'localhost'
     MAIL_PORT = 25
     MAIL_USE_SSL = False
+    
+    CELERY_RESULT_BACKEND = 'redis://localhost'
+    CELERY_ENABLE_UTC = True
+    BROKER_URL = 'redis://localhost'
 
 class ProductionConfig(Config):
     MAIL_USE_SSL = True

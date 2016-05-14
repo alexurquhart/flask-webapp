@@ -14,7 +14,7 @@ def runserver():
     
 @manager.command
 def runmail():
-    server = smtpd.DebuggingServer(('127.0.0.1', 2048), None)
+    smtpd.DebuggingServer(('127.0.0.1', 2048), None)
     asyncore.loop()
 
 manager.add_command('db', MigrateCommand)
