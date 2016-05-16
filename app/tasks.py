@@ -1,5 +1,6 @@
-import flask
+import flask, time
 from celery import Celery
+from app.models.user import User
 
 class FlaskCelery(Celery):
 
@@ -35,4 +36,4 @@ celery = FlaskCelery()
 
 @celery.task
 def add(x, y):
-    print x + y
+    return User.query.count()

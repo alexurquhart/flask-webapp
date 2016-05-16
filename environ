@@ -14,4 +14,5 @@ else
 fi
 
 export SESSION_SECRET="bcNqzxcvJf81udVepd4YjSIveVn3hgQRqnRsZ21dmvzJWpjJ43CvIvnYa3NCYLeCheWa0A0rWtzwanzxWO3vSA==";
+export SECURITY_PASSWORD_SALT="54db4f012a2d41124951b8517393f505"
 export DATABASE_URI="postgresql://alexurquhart:password@localhost/app";

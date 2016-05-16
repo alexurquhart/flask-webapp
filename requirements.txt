@@ -1,4 +1,5 @@
 Flask==0.10.1
+Flask-Assets==0.11
 Flask-DebugToolbar==0.10.0
 Flask-Login==0.3.2
 Flask-Mail==0.9.1
@@ -40,4 +41,5 @@ python-editor==1.0
 pytz==2016.4
 redis==2.10.5
 six==1.10.0
+webassets==0.11.1
 wsgiref==0.1.2
