@@ -11,7 +11,7 @@ Starter template for a flask web app. Includes:
 - Redis
 - PostgreSQL
 
-##To install
+## To install
 
 ```bash
 > git clone https://github.com/alexurquhart/flask-webapp.git
